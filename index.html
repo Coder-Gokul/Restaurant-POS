@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurent POS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container row  mx-auto">
+        <div class="left-container col-7">
+            <h1 class="mt-4" style="font-weight: 700;">Ongoing Orders</h1>
+            <div class="input-group my-3">
+                <input id="search-input" type="text" class="form-control" placeholder="Search for to-go, delivery or dine-in"
+                    aria-label="Search">
+            </div>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" data-filter="all">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-filter="dine-in">Dine in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-filter="to-go">To go</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-filter="delivery">Delivery</a>
+                </li>
+            </ul>
+
+            <div class="container">
+                <div class="row gx-2 mt-3">
+                    <!-- card-one -->
+                    <div class="col col-xl-6 col-lg-12">
+                        <div class=" order-card" data-type="to-go">
+                            <div class="p-3">
+                                <div class="d-flex justify-content-between flex-nowrap">
+                                    <div class="d-flex flex-column gap-3">
+                                        <h5 class="align">Table No. 2A</h5>
+                                        <p>Name: Kevin Dukkon</p>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3">
+                                        <p class="align">12345</p>
+                                        <p>$1000</p>
+                                    </div>
+                                </div>
+                                <div class="order-actions d-flex justify-content-between flex-nowrap mt-3">
+                                    <div class="d-flex flex-nowrap gap-2">
+                                        <button class="btn btn-primary font">Pay</button>
+                                        <button class="btn btn-secondary font">Pay Later</button>
+                                    </div>
+                                    <div class="d-flex flex-nowrap gap-2">
+                                        <button class="btn btn-outline-secondary p-0"><img src="images/delete.svg"
+                                                alt=""></button>
+                                        <button class="btn btn-outline-secondary p-1"><img src="images/print.svg"
+                                                alt=""></button>
+                                        <button class="btn btn-outline-secondary p-1"><img src="images/edit.svg"
+                                                alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-color: #f4dddd" class=" center">
+                                <p class="order-status mt-4 mb-0 dotted " style="background-color: #e4fcf3;"></p>
+                                <div class="d-flex justify-content-between p-3">
+                                    <span style="color: #fca9a6">To-go</span>
+                                    <span class="text-primary"><img src="images/time.svg" alt=""> 15 mins</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-two -->
+                    <div class="col col-xl-6 col-lg-12">
+                        <div class=" order-card" data-type="to-go">
+                            <div class="p-3">
+                                <div class="d-flex justify-content-between flex-nowrap">
+                                    <div class="d-flex flex-column gap-3">
+                                        <h5 class="align">Table No. 4B</h5>
+                                        <p>Name: Rajput singh</p>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3">
+                                        <p class="align">28723</p>
+                                        <p>$600</p>
+                                    </div>
+                                </div>
+                                <div class="order-actions d-flex justify-content-between flex-nowrap mt-3">
+                                    <div class="d-flex flex-nowrap gap-2">
+                                        <button class="btn btn-primary font">Pay</button>
+                                        <button class="btn btn-secondary font">Pay Later</button>
+                                    </div>
+                                    <div class="d-flex flex-nowrap gap-2">
+                                        <button class="btn btn-outline-secondary p-0"><img src="images/delete.svg"
+                                                alt=""></button>
+                                        <button class="btn btn-outline-secondary p-1"><img src="images/print.svg"
+                                                alt=""></button>
+                                        <button class="btn btn-outline-secondary p-1"><img src="images/edit.svg"
+                                                alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-color: #f4dddd" class=" center">
+                                <p class="order-status mt-4 mb-0 dotted " style="background-color: #e4fcf3;"></p>
+                                <div class="d-flex justify-content-between p-3">
+                                    <span style="color: #fca9a6">To-go</span>
+                                    <span class="text-primary"><img src="images/time.svg" alt=""> 12 mins</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-three -->
+                    <div class="col col-xl-6 col-lg-12">
+                        <div class=" order-card" data-type="dine-in">
+                            <div class="p-3">
+                                <div class="d-flex justify-content-between flex-nowrap">
+                                    <div class="d-flex flex-column gap-3">
+                                        <h5 class="align">Table No. 2C</h5>
+                                        <p>Name: Brekal sionat</p>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3">
+                                        <p class="align">83759</p>
+                                        <p>$180</p>
+                                    </div>
+                                </div>
+                                <div class="order-actions d-flex justify-content-between flex-nowrap mt-3">
+                                    <div class="d-flex flex-nowrap gap-2">
+                                        <button class="btn btn-primary font">Pay</button>
+                                        <button class="btn btn-secondary font">Pay Later</button>
+                                    </div>
+                                    <div class="d-flex flex-nowrap gap-2">
+                                        <button class="btn btn-outline-secondary p-0"><img src="images/delete.svg"
+                                                alt=""></button>
+                                        <button class="btn btn-outline-secondary p-1"><img src="images/print.svg"
+                                                alt=""></button>
+                                        <button class="btn btn-outline-secondary p-1"><img src="images/edit.svg"
+                                                alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-color: #e4fcf3;" class=" center">
+                                <p class="order-status mt-4 mb-0 dotted " style="background-color: #e4fcf3;"></p>
+                                <div class="d-flex justify-content-between p-3">
+                                    <span style="color: #27efa2;">Dine-in</span>
+                                    <span class="text-primary"><img src="images/time.svg" alt=""> 25 mins</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-four -->
+                    <div class="col col-xl-6 col-lg-12">
+                        <div class=" order-card" data-type="dine-in">
+                            <div class="p-3">
+                                <div class="d-flex justify-content-between flex-nowrap">
+                                    <div class="d-flex flex-column gap-3">
+                                        <h5 class="align">Table No. 6D</h5>
+                                        <p>Name: Kurian jorge</p>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3">
+                                        <p class="align">54784</p>
+                                        <p>$230</p>
+                                    </div>
+                                </div>
+                                <div class="order-actions d-flex justify-content-between flex-nowrap mt-3">
+                                    <div class="d-flex flex-nowrap gap-2">
+                                        <button class="btn btn-primary font">Pay</button>
+                                        <button class="btn btn-secondary font">Pay Later</button>
+                                    </div>
+                                    <div class="d-flex flex-nowrap gap-2">
+                                        <button class="btn btn-outline-secondary p-0"><img src="images/delete.svg"
+                                                alt=""></button>
+                                        <button class="btn btn-outline-secondary p-1"><img src="images/print.svg"
+                                                alt=""></button>
+                                        <button class="btn btn-outline-secondary p-1"><img src="images/edit.svg"
+                                                alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-color: #e4fcf3;" class=" center">
+                                <p class="order-status mt-4 mb-0 dotted " style="background-color: #e4fcf3;"></p>
+                                <div class="d-flex justify-content-between p-3">
+                                    <span style="color: #27efa2;">Dine-in</span>
+                                    <span class="text-primary"><img src="images/time.svg" alt=""> 08 mins</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-five -->
+                    <div class="col col-xl-6 col-lg-12">
+                        <div class=" order-card" data-type="delivery">
+                            <div class="p-3">
+                                <div class="d-flex justify-content-between flex-nowrap">
+                                    <div class="d-flex flex-column gap-3">
+                                        <h5 class="align">Table No. 1E</h5>
+                                        <p>Name: david john</p>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3">
+                                        <p class="align">93747</p>
+                                        <p>$800</p>
+                                    </div>
+                                </div>
+                                <div class="order-actions d-flex justify-content-between flex-nowrap mt-3">
+                                    <div class="d-flex flex-nowrap gap-2">
+                                        <button class="btn btn-primary font">Pay</button>
+                                        <button class="btn btn-secondary font">Pay Later</button>
+                                    </div>
+                                    <div class="d-flex flex-nowrap gap-2">
+                                        <button class="btn btn-outline-secondary p-0"><img src="images/delete.svg"
+                                                alt=""></button>
+                                        <button class="btn btn-outline-secondary p-1"><img src="images/print.svg"
+                                                alt=""></button>
+                                        <button class="btn btn-outline-secondary p-1"><img src="images/edit.svg"
+                                                alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-color: #f7efe5" class=" center">
+                                <p class="order-status mt-4 mb-0 dotted " style="background-color: #be8529"></p>
+                                <div class="d-flex justify-content-between p-3">
+                                    <span style="color: #f9be5e">Delivery</span>
+                                    <span class="text-primary"><img src="images/time.svg" alt=""> 30 mins</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-six -->
+                    <div class="col col-xl-6 col-lg-12">
+                        <div class=" order-card" data-type="delivery">
+                            <div class="p-3">
+                                <div class="d-flex justify-content-between flex-nowrap">
+                                    <div class="d-flex flex-column gap-3">
+                                        <h5 class="align">Table No. 5A</h5>
+                                        <p>Name: Sebstian</p>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3">
+                                        <p class="align">74747</p>
+                                        <p>$1100</p>
+                                    </div>
+                                </div>
+                                <div class="order-actions d-flex justify-content-between flex-nowrap mt-3">
+                                    <div class="d-flex flex-nowrap gap-2">
+                                        <button class="btn btn-primary font">Pay</button>
+                                        <button class="btn btn-secondary font">Pay Later</button>
+                                    </div>
+                                    <div class="d-flex flex-nowrap gap-2">
+                                        <button class="btn btn-outline-secondary p-0"><img src="images/delete.svg"
+                                                alt=""></button>
+                                        <button class="btn btn-outline-secondary p-1"><img src="images/print.svg"
+                                                alt=""></button>
+                                        <button class="btn btn-outline-secondary p-1"><img src="images/edit.svg"
+                                                alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-color: #f7efe5" class=" center">
+                                <p class="order-status mt-4 mb-0 dotted " style="background-color: #be8529"></p>
+                                <div class="d-flex justify-content-between p-3">
+                                    <span style="color: #f9be5e">Delivery</span>
+                                    <span class="text-primary"><img src="images/time.svg" alt=""> 18 mins</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-container col-5">
+
+            <div class="table-info p-0">
+                <div class="p-3">
+                    <div class=" bg-primary p-2 text-light table-no mb-2">
+                        <label for="table">Table No.</label>
+                        <input type="text" name="" id="table" class="bg-primary border-0 ps-2"
+                            style="outline: none; color: white; font-weight: 500;">
+                    </div>
+                    <div class="p-2 text-light table-no " style="background-color:#f5f7fc;">
+                        <label for="table" class="text-dark">Name:</label>
+                        <input type="text" name="" id="table" class="border-0 ps-2"
+                            style="outline: none; color: black; font-weight: 500;background-color:#f5f7fc;">
+                    </div>
+                    <p class="font-small" style="color:rgb(108, 108, 238);;">Balance Due: $<span
+                            id="balance-due">450</span>
+
+                    <div class="btn-group my-2" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-outline-primary active  me-3 border-0"
+                            style="background-color: #85d8b8;">Dine In</button>
+                        <button type="button" class="btn btn-outline-primary me-3  btn-select ">To Go</button>
+                        <button type="button" class="btn btn-outline-primary me-3  btn-select">Delivery</button>
+                    </div>
+                    <div style="font-size: 13px;">
+                        <div class="d-flex justify-content-between mt-4 mb-3">
+                            <h6 style="font-weight: 800;">Items</h6>
+                            <h6 style="font-weight: 800;">Qty</h6>
+                            <h6 style="font-weight: 800;">Price</h6>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <div>Cheesy Chicken Pasta <img src="images/editpen.svg"></div>
+                            <div class="bg-primary px-4 text-white border-radius">2</div>
+                            <div style="font-weight: 600;">$700 </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <div>Cheesy Chicken Pasta <img src="images/editpen.svg"></div>
+                            <div class="bg-primary px-4 text-white border-radius">2</div>
+                            <div style="font-weight: 600;">$650 </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <div>Cheesy Chicken Pasta <img src="images/editpen.svg"></div>
+                            <div class="bg-primary px-4 text-white border-radius">2</div>
+                            <div style="font-weight: 600;">$350 </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <div>Cheesy Chicken Pasta <img src="images/editpen.svg"></div>
+                            <div class="bg-primary px-4 text-white border-radius">2</div>
+                            <div style="font-weight: 600;">$450 </div>
+                        </div>
+
+                        <div class="font-small mt-5 mb-1" style="color: lightgray;border-bottom:1px solid lightgray; ;">
+                            <span>Add cooking Instructions (Note)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3" style=" background-color: #e4e8f2;">
+                    <div class="d-flex justify-content-between">
+                        <p>Sub Total</p>
+                        <p>$1100</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Discount</p>
+                        <p>$100</p>
+                    </div>
+                    <div class="d-flex">
+                        <input type="checkbox" name="" id="">
+                        <p class="d-flex my-auto ms-1 font-small">Complimentary</p>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3" style="font-weight: 700;">
+                        <p>Total Payment</p>
+                        <p>$1000</p>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <button class="btn btn-secondary px-xl-5 bg-light border-0"
+                            style="font-weight: 700;color: gray;">Cancel</button>
+                        <button class="btn btn-secondary px-xl-4 bg-light border-0"
+                            style="font-weight: 700;color: gray;">Add
+                            Items</button>
+                        <button class="btn btn-secondary px-xl-5 bg-light border-0"
+                            style="font-weight: 700;color: gray;">Pay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>

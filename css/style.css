@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.order-card {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.order-actions button {
+    margin-right: 2px;
+}
+
+.order-status {
+    font-size: 0.9em;
+    color: #777;
+}
+.form-control::placeholder{
+    color: rgb(225, 221, 221);
+}
+.align {
+    margin: 0;
+}
+
+.table-info {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.total-payment {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    background-color: #e0e0e0;
+}
+
+.font {
+    font-size: 14px;
+}
+
+.dotted {
+    border-top: 2px dotted #77E6C0;
+}
+
+.left-container {
+    background-color: #f5f7fc;
+}
+
+.right-container {
+    background-color: #f5f7fc;
+}
+
+.table-info {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-no {
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.border-radius {
+    border-radius: 10px;
+}
+
+.font-small {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.btn-select {
+    border: none;
+    background-color: #f5f7fc;
+    color: lightgray;
+    font-weight: 500;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-container {
+        order: 2;
+        width: 100%;
+    }
+
+    .right-container {
+        order: 1;
+        width: 100%;
+    }
+}
