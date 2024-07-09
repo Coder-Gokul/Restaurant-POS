@@ -91,6 +91,13 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .scrollbar{
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}
+
 @media (max-width: 768px) {
     .left-container {
         order: 2;
